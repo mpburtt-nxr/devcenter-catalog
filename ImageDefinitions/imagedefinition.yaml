@@ -1,0 +1,18 @@
+$schema: "1.0"
+name: "D365FSCMcustomization"
+image: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2
+description: "This definition is for a Dynamics 365 Finance and Supply Chain Management UDE development environment. It includes the latest version of Visual Studio 2022 Enterprise and the Power Platform tools"
+
+tasks:
+  - name: winget
+    description: Install a package using winget
+    parameters:
+      package: 7Zip.7zip
+  - name: winget
+    description: Install a package using winget
+    parameters:
+      package: NotePad++.Notepad++
+  - name: install-vs-extension
+    description: Task that installs a specified Visual Studio extension
+    parameters:
+      marketplaceItemName: microsoft-IsvExpTools.PowerPlatformToolsVS2022
